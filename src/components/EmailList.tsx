@@ -159,6 +159,7 @@ const EmailList = ({ filter }: { filter: string }) => {
               </p>
               <p className="text-sm text-muted-foreground">
                 {formatDate(email.date)}
+                {email.favorite && <span className='ml-5 font-medium text-pink-500'>Favorite</span>}
               </p>
             </div>
           </div>
